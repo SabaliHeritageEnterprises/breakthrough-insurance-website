@@ -192,22 +192,26 @@ var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url"
 <link rel='stylesheet' id='elementor-gf-local-roboto-css' href='../../wp-content/uploads/elementor/google-fonts/css/roboto17a5.css?ver=1742485214' media='all' />
 <link rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='../../wp-content/uploads/elementor/google-fonts/css/robotoslabe9c4.css?ver=1742485246' media='all' />
 
-<!-- Global Color Theme: White, Gold, Black -->
+<!-- Global Color Theme: Gold & Black -->
 <style>
     /* Reset or override common elements */
     body {
-        background-color: #ffffff;
-        color: #222222;
+        background-color: #000000;
+        color: #d4af37;
     }
     h1, h2, h3, h4, h5, h6 {
-        color: #000000;
+        color: #d4af37;
+    }
+    p, span, div:not(.special) {
+        color: #ffffff;
     }
     a, a:visited {
         color: #d4af37;
         text-decoration: none;
+        transition: all 0.3s ease;
     }
     a:hover, a:focus {
-        color: #b8962e;
+        color: #ffffff;
         text-decoration: underline;
     }
     .btn, .btn-theme, .button, input[type="submit"] {
@@ -215,9 +219,10 @@ var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url"
         color: #000000 !important;
         border: 2px solid #d4af37 !important;
         transition: all 0.3s ease;
+        font-weight: bold;
     }
     .btn:hover, .btn-theme:hover, .button:hover, input[type="submit"]:hover {
-        background-color: #ffffff !important;
+        background-color: #000000 !important;
         color: #d4af37 !important;
         border-color: #d4af37 !important;
     }
@@ -228,35 +233,53 @@ var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url"
     }
     .btn-outline:hover {
         background: #d4af37 !important;
-        color: #ffffff !important;
+        color: #000000 !important;
     }
-    /* Headers, footers, widgets – adjust as needed */
-    .site-header, .site-footer {
+    /* Headers, footers, widgets */
+    .site-header, .site-footer, header, footer {
         background-color: #000000;
-        color: #ffffff;
-    }
-    .site-header a, .site-footer a {
         color: #d4af37;
     }
-    .site-header a:hover, .site-footer a:hover {
+    .site-header a, .site-footer a, header a, footer a {
+        color: #d4af37;
+    }
+    .site-header a:hover, .site-footer a:hover, header a:hover, footer a:hover {
         color: #ffffff;
     }
-    /* Optional: gold accents on borders, separators */
+    /* Gold accents on borders, separators */
     hr, .border-gold {
         border-color: #d4af37;
     }
-    /* Custom gold background sections */
+    /* Gold background sections */
     .gold-bg {
         background-color: #d4af37;
         color: #000000;
     }
+    .gold-bg h1, .gold-bg h2, .gold-bg h3 {
+        color: #000000;
+    }
     .black-bg {
         background-color: #000000;
-        color: #ffffff;
+        color: #d4af37;
     }
-    .white-bg {
-        background-color: #ffffff;
-        color: #000000;
+    /* Form inputs */
+    input, textarea, select {
+        background-color: #1a1a1a;
+        color: #d4af37;
+        border: 1px solid #d4af37;
+    }
+    input:focus, textarea:focus, select:focus {
+        border-color: #ffffff;
+        outline: none;
+    }
+    /* Cards, widgets, boxes */
+    .card, .widget, .box {
+        background-color: #1a1a1a;
+        color: #ffffff;
+        border: 1px solid #d4af37;
+    }
+    .card h1, .card h2, .card h3, .widget h1, .widget h2, .widget h3 {
+        color: #d4af37;
     }
 </style>
 </head>
