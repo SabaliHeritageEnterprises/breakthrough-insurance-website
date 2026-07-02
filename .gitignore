@@ -1,0 +1,7 @@
+﻿# Local caches and temporary files
+hits-cache/
+hits-log
+cookies
+*.log
+.DS_Store
+Thumbs.db
