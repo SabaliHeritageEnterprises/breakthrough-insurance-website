@@ -881,17 +881,17 @@ var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url"
         background-color: #000000 !important;
     }
 </style>
-<!-- Global Color Theme: Gold & Black (All text gold) -->
+<!-- Global Color Theme: White & Gold (interchanged from black/white) -->
 <style>
     body {
-        background-color: #000000;
-        color: #d4af37;
+        background-color: #ffffff;
+        color: #000000;
     }
     h1, h2, h3, h4, h5, h6 {
         color: #d4af37;
     }
     p, span, div, li, blockquote, cite, label, .text-content {
-        color: #d4af37;
+        color: #000000;
     }
     a, a:visited {
         color: #d4af37;
@@ -899,7 +899,7 @@ var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url"
         transition: all 0.3s ease;
     }
     a:hover, a:focus {
-        color: #ffffff;
+        color: #000000;
         text-decoration: underline;
     }
     .btn, .btn-theme, .button, input[type="submit"] {
@@ -911,8 +911,8 @@ var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url"
     }
     .btn:hover, .btn-theme:hover, .button:hover, input[type="submit"]:hover {
         background-color: #000000 !important;
-        color: #d4af37 !important;
-        border-color: #d4af37 !important;
+        color: #ffffff !important;
+        border-color: #000000 !important;
     }
     .btn-outline {
         background: transparent !important;
@@ -921,17 +921,17 @@ var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url"
     }
     .btn-outline:hover {
         background: #d4af37 !important;
-        color: #000000 !important;
+        color: #ffffff !important;
     }
     .site-header, .site-footer, header, footer {
-        background-color: #000000;
-        color: #d4af37;
+        background-color: #ffffff;
+        color: #000000;
     }
     .site-header a, .site-footer a, header a, footer a {
-        color: #d4af37;
+        color: #000000;
     }
     .site-header a:hover, .site-footer a:hover, header a:hover, footer a:hover {
-        color: #ffffff;
+        color: #d4af37;
     }
     hr, .border-gold {
         border-color: #d4af37;
@@ -945,31 +945,55 @@ var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url"
     }
     .black-bg {
         background-color: #000000;
-        color: #d4af37;
+        color: #ffffff;
     }
     input, textarea, select {
-        background-color: #1a1a1a;
-        color: #d4af37;
+        background-color: #f0f0f0;
+        color: #000000;
         border: 1px solid #d4af37;
     }
     input:focus, textarea:focus, select:focus {
-        border-color: #ffffff;
+        border-color: #000000;
         outline: none;
     }
     .card, .widget, .box {
-        background-color: #1a1a1a;
-        color: #d4af37;
+        background-color: #f9f9f9;
+        color: #000000;
         border: 1px solid #d4af37;
     }
     .card h1, .card h2, .card h3, .widget h1, .widget h2, .widget h3 {
         color: #d4af37;
     }
-    /* Hero section – make background black for menu visibility */
-    .elementor-element-ecdbb10,
-    .elementor-element-ecdbb10 .elementor-column {
-        background-color: #000000 !important;
+    /* Menu links – black on white */
+    .menu a,
+    .nav a,
+    .primary-menu a,
+    .navigation a,
+    .navbar a,
+    .main-navigation a,
+    .menu-item a,
+    ul.menu a,
+    nav ul a,
+    .header-menu a,
+    .site-header .menu a,
+    .site-header .nav a {
+        color: #000000 !important;
     }
-    /* Hero section – force black background (overrides all) */
+    .menu a:hover,
+    .nav a:hover,
+    .primary-menu a:hover,
+    .navigation a:hover,
+    .navbar a:hover,
+    .main-navigation a:hover,
+    .menu-item a:hover,
+    ul.menu a:hover,
+    nav ul a:hover,
+    .header-menu a:hover,
+    .site-header .menu a:hover,
+    .site-header .nav a:hover {
+        color: #d4af37 !important;
+    }
+    /* Hero section – force white background */
     section.elementor-element-ecdbb10,
     section[data-id="ecdbb10"],
     .elementor-element-ecdbb10,
@@ -983,30 +1007,8 @@ var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url"
     .elementor-element-ecdbb10 .elementor-widget-container,
     .elementor-element-ecdbb10 .elementor-inner-column,
     .elementor-element-ecdbb10 .elementor-element-populated {
-        background-color: #000000 !important;
+        background-color: #ffffff !important;
         background-image: none !important;
-    }
-    /* Force menu links to white */
-    .primary-menu a,
-    .primary-menu li a,
-    .primary-menu .menu-item a,
-    .primary-menu .current-menu-item a {
-        color: #ffffff !important;
-    }
-    .primary-menu a:hover,
-    .primary-menu li a:hover {
-        color: #d4af37 !important;
-    }
-    /* Also target any submenu items */
-    .primary-menu .sub-menu a,
-    .primary-menu .children a {
-        color: #ffffff !important;
-        background-color: #1a1a1a !important;
-    }
-    .primary-menu .sub-menu a:hover,
-    .primary-menu .children a:hover {
-        color: #d4af37 !important;
-        background-color: #000000 !important;
     }
 </style>
 </head>
